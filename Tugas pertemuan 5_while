@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Masukkan jumlah bintang paling atas: ";
+    cin >> n;  // Input
+
+    int i = n;
+    // Perulangan while
+    while (i > 0) {
+        int j = 0;
+        while (j < i) {
+            cout << "*";
+            j++;
+        }
+        cout << endl;  // Pindah ke baris baru setelah mencetak satu baris bintang
+        i--;
+    }
+
+    return 0;
+}
